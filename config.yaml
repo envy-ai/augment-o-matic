@@ -1,0 +1,51 @@
+transformations:
+  - name: rotate
+    parameters:
+      probability: 0
+      max_left_rotation: 25
+      max_right_rotation: 25
+
+  - name: rotate
+    parameters:
+      probability: 1
+      max_left_rotation: 12
+      max_right_rotation: 12
+
+  - name: flip_left_right
+    parameters:
+      probability: .5
+
+  - name: random_contrast
+    parameters:
+      probability: 1
+      min_factor: 0.7
+      max_factor: 1.3
+
+  - name: random_brightness
+    parameters:
+      probability: 1
+      min_factor: 0.7
+      max_factor: 1.3
+
+  - name: skew
+    parameters:
+      probability: 0
+      magnitude: 0.3
+
+  - name: random_color
+    parameters:
+      probability: 1
+      min_factor: 0.9
+      max_factor: 1.1
+
+  - name: crop_random
+    parameters:
+      probability: .65
+      percentage_area: 0.9
+
+  - name: crop_random
+    parameters:
+      probability: 0
+      percentage_area: 0.9
+      randomise_percentage_area: True
+
